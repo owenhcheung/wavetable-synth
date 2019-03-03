@@ -9,10 +9,11 @@
 <body>
   <div class="max-size">
     <div class="container">
-     
-        <div id="osc1" class="osc1 synth">
-          <h2>oscillator one</h2>
+
+        <div id="osc1" class="osc1">
+          <h1>oscillator one</h1>
           <div id="wave" class="wave">
+            <canvas id = "canvas" class = "canvas"></canvas>
           </div>
           <div id="effect" class="effect">
             <div id="pan" class="pan">
@@ -23,8 +24,8 @@
             </div>
           </div>
         </div>
-        <div id="osc2" class="osc2 synth">
-          <h2>oscillator two</h2>
+        <div id="osc2" class="osc2">
+          <h1>oscillator two</h1>
           <div id="wave" class="wave">
           </div>
           <div id="effect" class="effect">
@@ -40,7 +41,21 @@
 
         </div>
       </div>
-    
-</body>
 
+</body>
+<script>
+var canvas = document.getElementById('canvas');
+if (canvas.getContext)
+ {
+  var context = canvas.getContext('2d');
+  // Reset the current path
+  context.beginPath();
+  // Staring point (10,45)
+   context.moveTo(10,45);
+  // End point (180,47)
+  context.lineTo(180,47);
+  // Make the line visible
+  context.stroke();
+   }
+</script>
 </html>
