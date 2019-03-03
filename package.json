@@ -1,0 +1,27 @@
+{
+  "name": "wavetable-synth",
+  "version": "0.0.1",
+  "description": "vst but in js cuz were dumb",
+  "main": "index.js",
+  "dependencies": {
+    "animejs": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch src/sass:dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenhcheung/wavetable-synth.git"
+  },
+  "author": "owen, simon, alan",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/owenhcheung/wavetable-synth/issues"
+  },
+  "homepage": "https://github.com/owenhcheung/wavetable-synth#readme"
+}
