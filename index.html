@@ -10,58 +10,61 @@
   <div class="max-size">
     <div class="container">
 
-        <div id="osc1" class="osc1 synth">
-          <h2>oscillator one</h2>
+      <div id="osc1" class="osc1 synth">
+        <h2>oscillator one</h2>
 
-          <div id="wave" class="wave">
-            <canvas id="canvas" class="canvas"></canvas>
-          </div>
-
-          <div id="effect" class="effect">
-            <div id="pan" class="pan">
-            </div>
-            <div id="unison" class="unison">
-            </div>
-            <div id="volume" class="volume">
-            </div>
-          </div>
+        <div id="wave" class="wave">
+          <canvas id="osc1_canvas" class="canvas"></canvas>
         </div>
-        <div id="osc2" class="osc2 synth">
-          <h2>oscillator two</h2>
 
-          <div id="wave" class="wave">
+        <div id="effect" class="effect">
+          <div id="pan" class="pan">
           </div>
-          <div id="effect" class="effect">
-            <div id="pan" class="pan">
-            </div>
-            <div id="unison" class="unison">
-            </div>
-            <div id="volume" class="volume">
-            </div>
+          <div id="unison" class="unison">
           </div>
-        </div>
-        <div id="filter" class="filter">
-          <h2>filter</h2>
-          <div class="wave">
-
+          <div id="volume" class="volume">
           </div>
         </div>
       </div>
+      <div id="osc2" class="osc2 synth">
+        <h2>oscillator two</h2>
+
+        <div id="wave" class="wave">
+          <canvas id="osc2_canvas" class="canvas"></canvas>
+        </div>
+        <div id="effect" class="effect">
+          <div id="pan" class="pan">
+          </div>
+          <div id="unison" class="unison">
+          </div>
+          <div id="volume" class="volume">
+          </div>
+        </div>
+      </div>
+      <div id="filter" class="filter">
+        <h2>filter</h2>
+        <div class="wave">
+
+        </div>
+      </div>
+    </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="src/js/oscillatorcanvas.js"></script>
 <script>
-var canvas = document.getElementById('canvas');
-if (canvas.getContext)
- {
-  var context = canvas.getContext('2d');
-  // Reset the current path
-  context.beginPath();
-  // Staring point (10,45)
-   context.moveTo(0,canvas.height/2);
-  // End point (180,47)
-  context.lineTo(canvas.width,canvas.height/2);
-  // Make the line visible
-  context.stroke();
-   }
+  // var canvas = document.getElementById('');
+  // if (canvas.getContext) {
+  //   var context = canvas.getContext('2d');
+  //   // Reset the current path
+  //   context.beginPath();
+  //   // Staring point (10,45)
+  //   context.moveTo(0, canvas.height / 2);
+  //   // End point (180,47)
+  //   context.lineTo(canvas.width, canvas.height / 2);
+  //   // Make the line visible
+  //   context.stroke();
+  // }
 </script>
+
 </html>

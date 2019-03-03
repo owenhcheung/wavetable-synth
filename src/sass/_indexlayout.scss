@@ -2,6 +2,7 @@ body {
     background-color: $white;
     margin: 0;
 }
+
 .max-size {
     display: grid;
     margin-left: auto;
@@ -9,20 +10,23 @@ body {
     max-width: 1600px;
     height: 100vh;
 }
+
 .container {
     display: grid;
-    grid-template-columns: [margin-top-start] 50px [margin-top-end]  repeat(2, [col-start] 1fr[col-end]) 25% [margin-bottom-start] 50px [margin-bottom-end];
+    grid-template-columns: [margin-top-start] 50px [margin-top-end] repeat(2, [col-start] 1fr[col-end]) 25% [margin-bottom-start] 50px [margin-bottom-end];
     grid-template-rows: [margin-top-start] 50px [margin-top-end] repeat(2, [row-start] 1fr [row-end]) [margin-bottom-start] 50px [margin-bottom-end];
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 
 }
+
 .synth {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 40px auto 2fr;
     grid-row-gap: 1px;
 }
+
 .filter {
     display: grid;
     grid-template-columns: auto;
