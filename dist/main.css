@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 13px;
+}
+
+.osc1 .effect .pan {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background: #FEFCFB;
+}
+
+/*# sourceMappingURL=main.css.map */
