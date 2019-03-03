@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400i,900i");
 body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: #BD89FF;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 14px;
+}
+
+p {
+  color: #001356;
+  font-style: italic;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 0.26em;
+}
+
+body {
+  background-color: #FEFCFB;
   margin: 0;
 }
 
