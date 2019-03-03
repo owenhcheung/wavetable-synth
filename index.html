@@ -57,9 +57,9 @@ if (canvas.getContext)
   // Reset the current path
   context.beginPath();
   // Staring point (10,45)
-   context.moveTo(10,45);
+   context.moveTo(0,canvas.height/2);
   // End point (180,47)
-  context.lineTo(180,47);
+  context.lineTo(canvas.width,canvas.height/2);
   // Make the line visible
   context.stroke();
    }
