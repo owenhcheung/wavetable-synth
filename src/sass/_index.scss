@@ -4,14 +4,16 @@ html {
 
 .osc1 {
   .wave {
-    width: 400em;
-    height: 300em;
-    border: 1px black;
+    width: 28em;
+    height: 16em;
+    border: 1px black solid;
+    background-size: 18px 18px;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
   }
   .effect {
     .pan {
-      width: 15em;
-      height: 15em;
+      width: 1em;
+      height: 1em;
       border-radius: 50%;
       background: #FEFCFB;
     }

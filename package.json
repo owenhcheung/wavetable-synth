@@ -4,7 +4,8 @@
   "description": "vst but in js cuz were dumb",
   "main": "index.js",
   "dependencies": {
-    "animejs": "^3.0.1"
+    "animejs": "^3.0.1",
+    "artboard": "0.0.2"
   },
   "devDependencies": {
     "eslint": "^5.15.0",
