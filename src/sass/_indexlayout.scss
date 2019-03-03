@@ -1,4 +1,8 @@
+.max-size {
+    display: grid;
+    grid-template-columns: 1fr 1300px 1fr  ;
+}
 .container {
     display: grid;
-    grid-template-columns: 13px;
+    grid-template-columns: [margin-left] 50px  ;
 }
