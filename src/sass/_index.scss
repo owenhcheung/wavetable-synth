@@ -1,15 +1,15 @@
-html {
 
+.wave {
+  width: 28em;
+  height: 16em;
+  border: 1px black solid;
+  background-size: 18px 18px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
 }
-
 .osc1 {
-  .wave {
-    width: 28em;
-    height: 16em;
-    border: 1px black solid;
-    background-size: 18px 18px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
-  }
+  grid-column: 1 / 1;
+  grid-row: row-start / row-end 1;
+
   .effect {
     .pan {
       width: 1em;
@@ -26,9 +26,9 @@ html {
   }
 }
 .osc2 {
-  .wave {
-
-  }
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  
   .effect {
     .pan {
 

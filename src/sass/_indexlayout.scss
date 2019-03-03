@@ -1,8 +1,16 @@
+body {
+    margin: 0;
+}
 .max-size {
     display: grid;
-    grid-template-columns: 1fr 1300px 1fr  ;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 100vh;
 }
 .container {
     display: grid;
-    grid-template-columns: [margin-left] 50px  ;
+    grid-template-columns: repeat(2, [col-start] 1fr[col-end]) 25% [end];
+    grid-template-rows: [margin-top-start] 50px [margin-top-end] repeat(2, [row-start] 1fr [row-end]) [margin-bottom-start] 50px [margin-bottom-end];
+
 }
