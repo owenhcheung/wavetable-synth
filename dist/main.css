@@ -49,7 +49,14 @@ body {
 .synth {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr auto 2fr;
+  grid-template-rows: 40px auto 2fr;
+  grid-row-gap: 1px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 40px auto 1fr;
   grid-row-gap: 1px;
 }
 
@@ -74,6 +81,10 @@ body {
 .osc2 {
   grid-column: col-start 2/col-end 2;
   grid-row: row-start 1/row-end 1;
+}
+.filter {
+  grid-column: col-start 1/col-end 2;
+  grid-row: row-start 2/row-end 2;
 }
 
 /*# sourceMappingURL=main.css.map */

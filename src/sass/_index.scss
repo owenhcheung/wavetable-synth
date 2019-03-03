@@ -45,3 +45,7 @@
     }
   }
 }
+.filter {
+  grid-column: col-start 1 / col-end 2;
+  grid-row: row-start 2 / row-end 2;
+}
