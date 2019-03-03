@@ -3,6 +3,11 @@
   grid-template-columns: 13px;
 }
 
+.osc1 .wave {
+  width: 400em;
+  height: 300em;
+  border: 1px black;
+}
 .osc1 .effect .pan {
   width: 15em;
   height: 15em;
