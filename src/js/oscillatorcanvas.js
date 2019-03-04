@@ -23,6 +23,10 @@ function draw(canvas) {
     context.clearRect(0, 0, context.width, context.height)
 
     for (var x = 0; x < canvasWidth; x++) {
+        var mousePos = getMousePos(canvas, evt);
+
+        context.fillStyle = "#001356";
+        context.fillRect(mousePos.x, mousePos.y / 2, 1, 1);
         context.beginPath();
         context.fillStyle = "#001356"
         context.arc(x, values[x] /*+ (canvasHeight / 2)*/ , 1, 0, 2 * Math.PI);
@@ -32,6 +36,10 @@ function draw(canvas) {
 
 
 $(document).ready(() => {
+    osc1Canvas.width = 530;
+    osc1Canvas.height = 256;
+    osc2Canvas.width = 530;
+    osc2Canvas.height = 256;
     draw(osc1Canvas)
     draw(osc2Canvas)
 })
@@ -43,7 +51,13 @@ $('#osc1_canvas').mousemove(event => {
 
     draw(document.getElementById("osc1_canvas"))
 })
+$('#osc2_canvas').mousemove(event => {
+    if (event.button != 0) return
+    const mousePos = getMousePos(document.getElementById("osc2_canvas"), event)
+    values[mousePos.x] = mousePos.y
 
+    draw(document.getElementById("osc2_canvas"))
+})
 // function init() {
 //     var ctx = document.getElementById("osc1_canvas").getContext('2d');
 //     for (var i = 0; i < ctx.width; i++) {
