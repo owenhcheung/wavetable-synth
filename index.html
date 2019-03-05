@@ -7,7 +7,7 @@
 
   <script type="text/paperscript" canvas="osc1_canvas">
     // The amount of segment points we want to create:
-    var amount = 50;
+    var amount = 300;
     
     // The maximum height of the wave:
     var height = 100;
@@ -16,11 +16,11 @@
     var path = new Path({
         // 80% black:
         strokeColor: [0.8],
-        strokeWidth: 10,
+        strokeWidth: 1,
         strokeCap: 'round'
     });
     var a;
-    a = (view.size.width / (amount + 1)) / 2
+    a = (view.size.width / (amount + 1)) / 2 + 2
     // Add 5 segment points to the path spread out
     // over the width of the view:
     for (var i = 0; i <= amount; i++) {

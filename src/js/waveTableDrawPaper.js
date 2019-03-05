@@ -1,5 +1,5 @@
 // The amount of segment points we want to create:
-var amount = 100;
+var amount = 500;
 
 // The maximum height of the wave:
 var height = 100;
